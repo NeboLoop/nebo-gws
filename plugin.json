@@ -1,0 +1,47 @@
+{
+  "id": "",
+  "slug": "gws",
+  "name": "Google Workspace CLI",
+  "version": "0.22.3",
+  "description": "Google Workspace CLI — Gmail, Calendar, Drive, Sheets, Docs, Chat, Meet",
+  "author": "NeboLoop",
+  "platforms": {
+    "macos-arm64": {
+      "binary_name": "gws",
+      "sha256": "",
+      "signature": "",
+      "size": 0,
+      "download_url": ""
+    },
+    "macos-amd64": {
+      "binary_name": "gws",
+      "sha256": "",
+      "signature": "",
+      "size": 0,
+      "download_url": ""
+    },
+    "linux-arm64": {
+      "binary_name": "gws",
+      "sha256": "",
+      "signature": "",
+      "size": 0,
+      "download_url": ""
+    },
+    "linux-amd64": {
+      "binary_name": "gws",
+      "sha256": "",
+      "signature": "",
+      "size": 0,
+      "download_url": ""
+    },
+    "windows-amd64": {
+      "binary_name": "gws.exe",
+      "sha256": "",
+      "signature": "",
+      "size": 0,
+      "download_url": ""
+    }
+  },
+  "signing_key_id": "",
+  "env_var": "GWS_BIN"
+}
