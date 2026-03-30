@@ -43,5 +43,16 @@
     }
   },
   "signing_key_id": "",
-  "env_var": "GWS_BIN"
+  "env_var": "GWS_BIN",
+  "auth": {
+    "type": "oauth_cli",
+    "label": "Google Account",
+    "description": "Authenticate with your Google Workspace account to access Gmail, Calendar, Drive, and more.",
+    "commands": {
+      "login": "auth login",
+      "status": "auth status",
+      "logout": "auth logout"
+    },
+    "env": {}
+  }
 }
