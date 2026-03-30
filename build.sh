@@ -80,7 +80,7 @@ for PLATFORM in "${!PLATFORM_MAP[@]}"; do
      --arg size "$SIZE" \
      --arg bn "$BINARY_NAME" \
      --arg ver "$SEMVER" \
-     '.version = $ver | .platforms[$p].sha256 = $sha | .platforms[$p].size = ($size | tonumber) | .platforms[$p].binary_name = $bn' \
+     '.version = $ver | .platforms[$p].sha256 = $sha | .platforms[$p].size = ($size | tonumber) | .platforms[$p].binaryName = $bn' \
      plugin.json > plugin.json.tmp && mv plugin.json.tmp plugin.json
 done
 

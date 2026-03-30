@@ -7,43 +7,43 @@
   "author": "NeboLoop",
   "platforms": {
     "macos-arm64": {
-      "binary_name": "gws",
+      "binaryName": "gws",
       "sha256": "",
       "signature": "",
       "size": 0,
-      "download_url": ""
+      "downloadUrl": ""
     },
     "macos-amd64": {
-      "binary_name": "gws",
+      "binaryName": "gws",
       "sha256": "",
       "signature": "",
       "size": 0,
-      "download_url": ""
+      "downloadUrl": ""
     },
     "linux-arm64": {
-      "binary_name": "gws",
+      "binaryName": "gws",
       "sha256": "",
       "signature": "",
       "size": 0,
-      "download_url": ""
+      "downloadUrl": ""
     },
     "linux-amd64": {
-      "binary_name": "gws",
+      "binaryName": "gws",
       "sha256": "",
       "signature": "",
       "size": 0,
-      "download_url": ""
+      "downloadUrl": ""
     },
     "windows-amd64": {
-      "binary_name": "gws.exe",
+      "binaryName": "gws.exe",
       "sha256": "",
       "signature": "",
       "size": 0,
-      "download_url": ""
+      "downloadUrl": ""
     }
   },
-  "signing_key_id": "",
-  "env_var": "GWS_BIN",
+  "signingKeyId": "",
+  "envVar": "GWS_BIN",
   "auth": {
     "type": "oauth_cli",
     "label": "Google Account",
