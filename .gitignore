@@ -2,3 +2,4 @@ dist/
 *.tar.gz
 *.zip
 .DS_Store
+auth.json
