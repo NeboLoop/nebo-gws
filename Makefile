@@ -1,9 +1,14 @@
 VERSION ?= $(shell gh release view --repo googleworkspace/cli --json tagName -q '.tagName')
 
-.PHONY: download manifest upload clean
+.PHONY: download sync-skills build manifest upload clean help
+
+build: download sync-skills ## Download binary + sync skills
 
 download: ## Download gws binaries and update plugin.json
 	./build.sh $(VERSION)
+
+sync-skills: ## Sync skills from upstream gws repo
+	./sync-skills.sh $(VERSION)
 
 manifest: ## Show plugin.json
 	@cat plugin.json | jq .
@@ -19,14 +24,14 @@ upload: ## Upload binaries to NeboLoop (requires SKILL_ID and TOKEN env vars)
 					-H "Authorization: Bearer $$TOKEN" \
 					-F "file=@$$BINARY" \
 					-F "platform=$$PLATFORM" \
-					-F "skill=@SKILL.md" \
+					-F "plugin=@PLUGIN.md" \
 				| jq -r 'if .id then "OK" else . end'; \
 			fi; \
 		fi; \
 	done
 
-clean: ## Remove downloaded binaries
-	rm -rf dist/
+clean: ## Remove downloaded binaries and skills
+	rm -rf dist/ skills/
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2}'
