@@ -10,8 +10,8 @@ DIST="dist"
 
 # Platform mapping: nebo-platform → github-asset-suffix
 declare -A PLATFORM_MAP=(
-  ["macos-arm64"]="aarch64-apple-darwin.tar.gz"
-  ["macos-amd64"]="x86_64-apple-darwin.tar.gz"
+  ["darwin-arm64"]="aarch64-apple-darwin.tar.gz"
+  ["darwin-amd64"]="x86_64-apple-darwin.tar.gz"
   ["linux-arm64"]="aarch64-unknown-linux-gnu.tar.gz"
   ["linux-amd64"]="x86_64-unknown-linux-gnu.tar.gz"
   ["windows-amd64"]="x86_64-pc-windows-msvc.zip"

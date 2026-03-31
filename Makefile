@@ -15,7 +15,7 @@ manifest: ## Show plugin.json
 
 upload: ## Upload binaries to NeboLoop (requires SKILL_ID and TOKEN env vars)
 	@if [ -z "$$SKILL_ID" ] || [ -z "$$TOKEN" ]; then echo "Usage: SKILL_ID=... TOKEN=... make upload"; exit 1; fi
-	@for PLATFORM in macos-arm64 macos-amd64 linux-arm64 linux-amd64 windows-amd64; do \
+	@for PLATFORM in darwin-arm64 darwin-amd64 linux-arm64 linux-amd64 windows-amd64; do \
 		if [ -d "dist/$$PLATFORM" ]; then \
 			BINARY=$$(ls dist/$$PLATFORM/gws* 2>/dev/null | head -1); \
 			if [ -n "$$BINARY" ]; then \

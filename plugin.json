@@ -6,39 +6,39 @@
   "description": "Google Workspace CLI — Gmail, Calendar, Drive, Sheets, Docs, Chat, Meet",
   "author": "NeboLoop",
   "platforms": {
-    "macos-arm64": {
+    "darwin-arm64": {
       "binaryName": "gws",
-      "sha256": "",
+      "sha256": "66d1d9ea813cadc4a9024419182472a11c91d846f7e173505ecc6cefa2242bac",
       "signature": "",
-      "size": 0,
+      "size": 15397712,
       "downloadUrl": ""
     },
-    "macos-amd64": {
+    "darwin-amd64": {
       "binaryName": "gws",
-      "sha256": "",
+      "sha256": "27489ee186aec8b96b4ba3c4cfba7443a08a197a192a231d9c7aa44508a96826",
       "signature": "",
-      "size": 0,
+      "size": 16190308,
       "downloadUrl": ""
     },
     "linux-arm64": {
       "binaryName": "gws",
-      "sha256": "",
+      "sha256": "4824a47feee141f6e1243ff841a6ca5176fb206e933457078b8011b3920439a5",
       "signature": "",
-      "size": 0,
+      "size": 18262360,
       "downloadUrl": ""
     },
     "linux-amd64": {
       "binaryName": "gws",
-      "sha256": "",
+      "sha256": "740f862e323a8a632daecf715888cc610857fe7b83ef7ac0722495c240aee7ad",
       "signature": "",
-      "size": 0,
+      "size": 19169792,
       "downloadUrl": ""
     },
     "windows-amd64": {
       "binaryName": "gws.exe",
-      "sha256": "",
+      "sha256": "6d5db7e540ad8d83d5756ac7101b553c3f0f16c801ea46c64aacbb9b50320e1e",
       "signature": "",
-      "size": 0,
+      "size": 17122816,
       "downloadUrl": ""
     }
   },
